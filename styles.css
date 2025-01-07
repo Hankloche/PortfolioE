@@ -122,6 +122,62 @@ body {
     transform: translateY(-5px);
 }
 
+/* Stages */
+.stages {
+    margin: 50px auto;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1000px;
+    background-color: #2d2d30;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #6b46c1;
+}
+
+.stages h2 {
+    font-size: 2rem;
+    color: #9f7aea;
+    margin-bottom: 20px;
+}
+
+.stage-item {
+    background: #3a3a40;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: #e1e1e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.stage-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Style des liens */
+a {
+    color: #6b46c1; /* Couleur de base */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Texte en gras */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition douce */
+}
+
+a:hover {
+    color: #9f7aea; /* Couleur au survol */
+    transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+a:focus {
+    outline: none; /* Supprime la bordure de focus */
+    border-bottom: 2px solid #9f7aea; /* Légère bordure sous le lien au focus */
+}
+
+a:active {
+    color: #4c2d91; /* Couleur lorsque le lien est cliqué */
+    transform: translateY(1px); /* Légère descente quand cliqué */
+}
+
+
 /* Pied de page */
 footer {
     text-align: center;
@@ -175,13 +231,20 @@ footer p {
     right: 20px;
     transform: translateY(-50%);
     background-color: #2d2d30;
-    padding: 10px;
+    padding: 20px;
     border-radius: 8px;
+    
+    /* Flexbox pour centrer le contenu */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Changer de 'center' à 'flex-start' pour ajuster le placement */
 }
 
 .programming-languages ul {
     list-style: none;
     padding: 0;
+    margin: 0; /* Réinitialise la marge et padding */
 }
 
 .programming-languages li {
@@ -195,7 +258,13 @@ footer p {
     font-weight: bold;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: color 0.3s ease;
+}
+
+/* Correction du problème de vide sous les icônes */
+.programming-languages a i {
+    margin-bottom: 0; /* Assurez-vous qu'il n'y a pas de marge sous les icônes */
 }
 
 .programming-languages a:hover {

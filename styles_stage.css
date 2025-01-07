@@ -34,9 +34,10 @@ header .veille-title {
 
 /* Section contenant les cartes */
 .cards {
-    display: flex;
-    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne suivante si nécessaire */
-    justify-content: space-between; /* Distribution des cartes de manière égale */
+    width: 100%; /* Laisse les cartes occuper toute la largeur disponible */
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* S'adapte à la taille de l'écran */
     gap: 20px;
     padding: 20px;
 }
@@ -48,9 +49,6 @@ header .veille-title {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: calc(33.333% - 20px); /* Trois cartes par ligne (ajustement selon l'espacement) */
-    margin-bottom: 20px; /* Espacement entre les lignes */
-    box-sizing: border-box; /* Pour que le padding soit inclus dans la largeur de l'élément */
 }
 
 .card:hover {
@@ -94,13 +92,11 @@ header .veille-title {
 
 /* Responsive pour les cartes */
 @media screen and (max-width: 768px) {
-    .card {
-        width: calc(50% - 20px); /* Deux cartes par ligne pour les petits écrans */
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajustement pour les écrans plus petits */
     }
-}
 
-@media screen and (max-width: 480px) {
-    .card {
-        width: 100%; /* Une carte par ligne pour les très petits écrans */
+    header .veille-title {
+        font-size: 1.5rem;
     }
 }

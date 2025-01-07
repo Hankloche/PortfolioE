@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="icon" href="LogoE.png" type="image/png">
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Intégration de Font Awesome -->
@@ -18,7 +19,8 @@
       <ul>
         <li><a href="#">Accueil</a></li>
         <li><a href="#">À propos</a></li>
-        <li><a href="#">Projets</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#stages">Stage</a></li>
         <li><a href="veille.html">Veille</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -54,6 +56,11 @@
     <aside class="programming-languages">
       <ul>
         <li>
+          <a href="https://www.php.net" target="_blank">
+            <i class="fab fa-php"></i>
+          </a>
+        </li>
+        <li>
           <a href="https://www.python.org" target="_blank">
             <i class="fab fa-python"></i>
           </a>
@@ -61,11 +68,6 @@
         <li>
           <a href="https://www.java.com" target="_blank">
             <i class="fab fa-java"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.php.net" target="_blank">
-            <i class="fab fa-php"></i>
           </a>
         </li>
         <li>
@@ -96,30 +98,54 @@
       </ul>
     </aside>
 
-    <!-- Section de profil -->
-    <section class="profile">
-      <img src="profile.jpg" alt="Photo de profil" class="profile-photo" />
-      <h1>Bonjour, je suis <strong>Evyn Faure</strong></h1>
-      <p>
-        Bienvenue sur mon portfolio. Je suis un développeur passionné avec de
-        l'expérience en
-        <em>[vos compétences principales]</em>. Explorez mes projets et
-        apprenons à mieux nous connaître !
-      </p>
-    </section>
+<!-- Section de présentation -->
+<section class="profile">
+  <img src="LogoE.png" alt="Photo de profil" class="profile-photo" />
+  <h1>Bonjour, je suis <strong>Evyn Faure</strong></h1>
+  <p>
+    Bienvenue sur mon portfolio ! Je suis développeur passionné.
+    Mon objectif est de créer des solutions simples et efficaces pour résoudre des problèmes complexes. 
+    Découvrez mes projets et n'hésitez pas à me contacter si vous souhaitez collaborer ou échanger.
+  </p>
+</section>
+
 
     <!-- Section Projets -->
-    <section class="projects">
+    <section id="projects" class="projects">
       <h2>Mes Projets</h2>
       <div class="project-item">
-        <h3>Projet 1</h3>
-        <p>Un projet innovant basé sur [une brève description].</p>
+        <h3>M2L</h3>
+        <p>M2L est une application web et mobile pour gérer les équipes et les tournois.
+           Elle permet de créer des tournois, ajouter des équipes, et suivre les résultats en temps réel.
+          <br>
+          L'application est développée avec Symfony pour le backend et JavaFX avec SceneBuilder pour le frontend,
+           offrant une interface simple et accessible.</p>
       </div>
       <div class="project-item">
-        <h3>Projet 2</h3>
+        <h3>GSB</h3>
         <p>
-          Une autre réalisation marquante qui met en avant [compétence
-          spécifique].
+          GSB est une application web et mobile, développée avec **Symfony** pour le backend et **Flutter (Dart)**
+           pour le frontend. Elle permet de gérer facilement les frais professionnels : soumettre, approuver et suivre les dépenses.
+        </p>
+      </div>
+    </section>
+
+    <section id="stages" class="stages">
+      <h2>Mes Stages</h2>
+      <div class="stage-item">
+        <h3>Stage 1</h3>
+        <a href="stage1.html">Lien vers le Stage 1</a>
+        <p>Mon premier stage s'est déroulé chez Foopgp,
+           où j'ai acquis de l'expérience dans les clés PGP et le développement web.
+        </p>
+      </div>
+      <div class="stage-item">
+        <h3>Stage 2</h3>
+        <a href="stage2.html">Lien vers le  Stage 2</a>
+        <p>
+          Mon deuxième stage a également eu lieu chez Foopgp,
+           où j'ai continué à améliorer les compétences développées lors de mon premier stage,
+           tout en travaillant également sur les pilotes et le développement web.
         </p>
       </div>
     </section>
