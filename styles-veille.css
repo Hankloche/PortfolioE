@@ -33,74 +33,93 @@ header .veille-title {
 }
 
 /* Section contenant les cartes */
-.cards {
-    display: flex;
-    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne suivante si nécessaire */
-    justify-content: space-between; /* Distribution des cartes de manière égale */
+.veille {
+    width: 100%; /* Laisse les cartes occuper toute la largeur disponible */
+    margin: 50px auto;
+    text-align: center;
+}
+
+.veille h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Section des cartes */
+.veille-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* S'adapte à la taille de l'écran */
     gap: 20px;
     padding: 20px;
 }
 
 /* Style des cartes */
-.card {
+.veille-card {
     background-color: #3a3a40;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: calc(33.333% - 20px); /* Trois cartes par ligne (ajustement selon l'espacement) */
-    margin-bottom: 20px; /* Espacement entre les lignes */
-    box-sizing: border-box; /* Pour que le padding soit inclus dans la largeur de l'élément */
 }
 
-.card:hover {
+.veille-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Titre des cartes */
-.card h3 {
+.veille-card h3 {
     color: #9f7aea;
     font-size: 1.4rem;
     margin-bottom: 15px;
     text-shadow: 0px 0px 5px #9f7aea;
-    text-align: center;
 }
 
-/* Liste dans les cartes */
-.card ul {
-    list-style: none; /* Supprime les puces */
-    padding: 0;
-    margin: 0;
+/* Date dans les cartes */
+.veille-card .date {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
 }
 
-.card ul li {
-    font-size: 1rem;
+/* Texte dans les cartes */
+.veille-card p {
     color: #cfcfcf;
     line-height: 1.6;
+    font-size: 1rem;
     margin-bottom: 10px;
-    padding-left: 10px;
-    position: relative;
 }
 
-.card ul li::before {
-    content: '•'; /* Ajout d'une puce personnalisée */
-    color: #6b46c1; /* Couleur violette */
-    position: absolute;
-    left: 0;
-    font-size: 1.2rem;
-    line-height: 1.2;
+/* Bouton Lire plus */
+.veille-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6b46c1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.veille-card .btn:hover {
+    background-color: #9f7aea;
 }
 
 /* Responsive pour les cartes */
 @media screen and (max-width: 768px) {
-    .card {
-        width: calc(50% - 20px); /* Deux cartes par ligne pour les petits écrans */
+    .veille-cards {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajustement pour les écrans plus petits */
     }
-}
 
-@media screen and (max-width: 480px) {
-    .card {
-        width: 100%; /* Une carte par ligne pour les très petits écrans */
+    header .veille-title {
+        font-size: 1.5rem;
+    }
+
+    .veille h2 {
+        font-size: 1.5rem;
     }
 }
