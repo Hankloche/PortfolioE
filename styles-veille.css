@@ -123,3 +123,38 @@ header .veille-title {
         font-size: 1.5rem;
     }
 }
+
+/* Style pour le bouton */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white; /* Texte blanc */
+    background-color: #6b46c1; /* Violet de ton header */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #9f7aea; /* Violet plus clair pour effet hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05); /* Légère augmentation de taille */
+}
+
+.button:active {
+    background-color: #5a3d91; /* Teinte plus foncée pour effet d'interaction */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) inset;
+    transform: scale(0.98); /* Réduction légère à l'activation */
+}
+
+/* Exemple de centrage dans une section */
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
