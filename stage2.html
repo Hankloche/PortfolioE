@@ -657,6 +657,375 @@
           </li>
         </ul>
       </div>
+      <div class="card">
+        <h3>20/01/2025</h3>
+        <ul>
+          <li>
+            <strong>Découverte et tests du Raspberry Pi :</strong>
+            <ul>
+              <li>
+                <strong>Présentation du Raspberry Pi :</strong>
+                Le maître de stage nous a expliqué le fonctionnement du
+                Raspberry Pi. Nous avons connecté une enceinte au Raspberry Pi
+                pour tester la gestion de la musique.
+              </li>
+              <li>
+                <strong
+                  >Connexion à l’enceinte et commande pour la musique :</strong
+                >
+                Pour jouer un fichier audio, j'ai utilisé la commande suivante :
+                <code>aplay /chemin/vers/le/fichier_audio.wav</code>
+              </li>
+              <li>
+                <strong
+                  >Connexion à l’écran et lancement de la musique :</strong
+                >
+                Connexion à l’écran du Raspberry Pi et lancement de la musique
+                avec la commande suivante :
+                <code>screen -d -r</code>
+              </li>
+              <li>
+                <strong
+                  >Modification des fichiers pour utiliser des clés SSH
+                  :</strong
+                >
+                Modifications effectuées dans les fichiers de configuration pour
+                supprimer l’utilisation du mot de passe et passer à
+                l’utilisation exclusive de clés SSH pour les connexions
+                sécurisées. Les clés SSH ont été renseignées dans les fichiers
+                nécessaires pour garantir une connexion sans mot de passe.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong
+              >Recherche sur le hook Git pour la vérification des commits signés
+              :</strong
+            >
+            <ul>
+              <li>
+                <strong>Problème sur Codeberg avec le hook Git :</strong>
+                Recherche sur l’utilisation des hooks Git sur Codeberg pour
+                vérifier les commits signés. Des problèmes ont été rencontrés
+                lors de l'intégration du hook sur Codeberg.
+              </li>
+              <li>
+                <strong
+                  >Solution locale pour vérifier les commits signés :</strong
+                >
+                Recherche d’une solution locale avec un hook Git pour valider
+                les commits signés.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>21/01/2025</h3>
+        <ul>
+          <li>
+            <strong
+              >Compte-rendu des tests pour le hook Git avec signature GPG
+              :</strong
+            >
+            <ul>
+              <li>
+                <strong>Objectif :</strong>
+                Mettre en place un hook Git pour empêcher les commits non signés
+                avec une clé GPG.
+              </li>
+              <li>
+                <strong>Étapes réalisées :</strong>
+                <ul>
+                  <li>
+                    <strong>Commandes testées :</strong>
+                    Utilisation de la commande suivante dans le script du hook :
+                    <code>git commit --dry-run</code><br />
+                    <em>Observation :</em> Cette commande simule le commit mais
+                    ne fournit aucune information sur la signature GPG, rendant
+                    son utilisation inefficace pour détecter les commits non
+                    signés.
+                  </li>
+                  <li>
+                    <strong>Autres essais :</strong>
+                    Expérimentation avec des hooks Git :
+                    <ul>
+                      <li><code>commit-msg</code></li>
+                      <li><code>pre-commit</code></li>
+                    </ul>
+                    <em>Observation :</em> Ces approches n’ont pas permis de
+                    détecter ou de forcer la signature des commits avec une clé
+                    GPG.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Résultat :</strong>
+                Aucun des scripts ou méthodes testés jusqu’à présent n’a permis
+                de bloquer efficacement les commits non signés.
+              </li>
+              <li>
+                <strong>Prochaine étape :</strong>
+                <ul>
+                  <li>
+                    Recherche d’une méthode ou commande efficace pour vérifier
+                    la signature GPG des commits avant leur autorisation.
+                  </li>
+                  <li>
+                    Exploration de pistes potentielles, comme l’utilisation de
+                    la commande :
+                    <code>git log --show-signature</code>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>22/01/2025</h3>
+        <ul>
+          <li>
+            <strong>1. Tests sur les hooks Git :</strong>
+            <ul>
+              <li>
+                <strong>1.1 Tests matinaux :</strong><br />
+                <em>Contexte :</em> Continuation des tests pour configurer un
+                hook Git qui bloque les commits non signés avec une clé GPG.<br />
+                <em>Résultat :</em> Les essais effectués ce matin n’ont toujours
+                pas abouti à une solution concluante pour vérifier ou forcer la
+                signature des commits.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>2. Modification de la page UDID :</strong>
+            <ul>
+              <li>
+                <strong>2.1 Ajout d’une option de traduction dynamique :</strong
+                ><br />
+                Modification d’une page UDID pour intégrer la prise en charge de
+                paramètres linguistiques.<br />
+                <em>Exemple :</em> Utilisation de <code>?lang=fr</code> pour
+                passer la langue en français.<br />
+                <em>Résultat attendu :</em> La page entière doit se traduire
+                automatiquement en fonction du paramètre de langue fourni dans
+                l’URL.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>3. Création d’un fichier CSS :</strong>
+            <ul>
+              <li>
+                <strong>3.1 Amélioration visuelle :</strong><br />
+                Création d’un fichier CSS dédié pour améliorer le rendu visuel
+                du site.<br />
+                <em>Objectif :</em> Apporter des améliorations à l’interface
+                utilisateur, comme une meilleure mise en page, des couleurs plus
+                harmonieuses, et une expérience utilisateur optimisée.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>23/01/2025</h3>
+        <ul>
+            <li>
+                <strong>1. Création d’un bouton pour accéder aux blogs :</strong>
+                <ul>
+                    <li>
+                        <strong>1.1 Ajout d’un bouton pour naviguer vers tous les blogs :</strong>
+                        <ul>
+                            <li><strong>Description :</strong> Création d’un bouton dédié permettant d’accéder à l’ensemble des blogs disponibles.</li>
+                            <li><strong>Amélioration :</strong> Ajout d’un titre à côté du bouton pour mieux guider les utilisateurs et améliorer l’accessibilité.</li>
+                            <li><strong>Traduction :</strong> Mise en place d’une version traduite du bouton et du titre pour l’affichage en anglais, garantissant une expérience cohérente pour les utilisateurs bilingues.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>2. Recherche sur Geonames :</strong>
+                <ul>
+                    <li>
+                        <strong>2.1 Qu’est-ce que Geonames ? :</strong>
+                        <ul>
+                            <li><strong>Définition :</strong> Geonames est une base de données géographique accessible en ligne qui fournit des informations sur les noms de lieux (villes, pays, coordonnées GPS, etc.). Elle est utilisée dans des applications pour géolocaliser ou référencer des lieux.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>2.2 Problèmes rencontrés avec Geonames :</strong>
+                        <ul>
+                            <li><strong>Contexte :</strong> Suite à des modifications effectuées sur une page utilisant Geonames, des erreurs ont été détectées.</li>
+                            <li><strong>Problèmes observés :</strong> 
+                                <ul>
+                                    <li>Les données récupérées via Geonames ne s’affichent pas correctement.</li>
+                                    <li>Des incohérences entre les informations attendues et celles renvoyées par la base de données.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Action en cours :</strong> Recherche approfondie pour identifier l’origine du problème et résoudre les erreurs liées à Geonames.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="card">
+      <h3>24/01/2025</h3>
+      <ul>
+          <li>
+              <strong>1. Tests JavaScript pour résoudre les problèmes Geonames :</strong>
+              <ul>
+                  <li>
+                      <strong>1.1 Problème rencontré avec Geonames :</strong>
+                      <ul>
+                          <li>Des tests ont été effectués sur le code JavaScript afin de résoudre les dysfonctionnements liés à l’utilisation de Geonames.</li>
+                      </ul>
+                  </li>
+                  <li>
+                      <strong>1.2 Résultats des tests :</strong>
+                      <ul>
+                          <li>Les tests ont permis d'identifier des ajustements nécessaires pour garantir que les données géographiques soient récupérées et affichées correctement sur les pages concernées.</li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <strong>2. Commit du bouton "Accéder à tous les blogs" :</strong>
+              <ul>
+                  <li>
+                      <strong>2.1 Création du bouton :</strong>
+                      <ul>
+                          <li>Un bouton a été créé pour permettre aux utilisateurs d'accéder facilement à tous les blogs, avec un titre associé pour une meilleure compréhension.</li>
+                      </ul>
+                  </li>
+                  <li>
+                      <strong>2.2 Commit dans une branche spécifique :</strong>
+                      <ul>
+                          <li>Le bouton a été ajouté dans le thème du site et a été commitée sur une branche séparée du projet, permettant ainsi de gérer cette fonctionnalité indépendamment du développement principal.</li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+  </div>  
+      <div class="card">
+        <h3>27/01/2025</h3>
+        <ul>
+            <li>
+                <strong>1. Modification de l’UDID :</strong>
+                <ul>
+                    <li>
+                        <strong>1.1 Intégration d’un Geonames fonctionnel :</strong><br>
+                        Le système Geonames a été intégré à la page UDID pour assurer un fonctionnement optimal et une récupération correcte des données géographiques.
+                    </li>
+                    <li>
+                        <strong>1.2 Refonte graphique :</strong><br>
+                        Une refonte visuelle a été effectuée pour adapter la page aux couleurs et au style graphique global du site, améliorant ainsi la cohérence et l’esthétique.
+                    </li>
+                    <li>
+                        <strong>1.3 Traduction de la page :</strong><br>
+                        La page UDID a été partiellement traduite pour offrir une version multilingue.<br>
+                        <em>Statut actuel :</em> La traduction et certains détails restent à finaliser.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>2. Création d’un fichier en Bash et JavaScript :</strong>
+                <ul>
+                    <li>
+                        <strong>2.1 Mise en place du fichier :</strong><br>
+                        Un fichier Bash a été créé pour répondre aux besoins du projet.
+                    </li>
+                    <li>
+                        <strong>2.2 Refaire les calculs et tableaux en Javascript :</strong><br>
+                        Les calculs et les tableaux ont été repris et restructurés :<br>
+                        <em>Optimisation des calculs pour plus de précision et de clarté.</em><br>
+                        <em>Amélioration de la présentation des tableaux pour faciliter la lisibilité et l’utilisation.</em>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- Card for 28/01/2025 -->
+    <div class="card">
+      <h3>28/01/2025</h3>
+      <li>Travail sur la page PGPID</li>
+      <ul>
+        <li><strong>Avancement :</strong> Traductions en JavaScript, page montrée au maître de stage pour validation.</li>
+        <li><strong>Retour du maître de stage :</strong> Remplacer les boutons par un calendrier interactif.</li>
+        <li><strong>Difficultés :</strong> Intégration complexe d’un calendrier en HTML, CSS, et JavaScript.</li>
+        <li><strong>Création :</strong> Calculateur JavaScript à partir d’un script Bash existant.</li>
+      </ul>
+    </div>
+
+    <!-- Card for 29/01/2025 -->
+    <div class="card">
+      <h3>29/01/2025</h3>
+      <li>Travail sur la page PGPID et calendrier</li>
+      <ul>
+        <li><strong>Avancement :</strong> Intégration du calendrier pour remplacer la saisie manuelle de la date de naissance.</li>
+        <li><strong>Difficultés :</strong> Gestion dynamique des mois dans le calendrier avec JavaScript.</li>
+        <li><strong>Recherche :</strong> Tentative de génération d’une courbe à partir du calcul créé le 28/01.</li>
+      </ul>
+    </div>
+
+    <!-- Card for 30/01/2025 -->
+    <div class="card">
+      <h3>30/01/2025</h3>
+      <li>Page PGPID et ajout d'un graphique</li>
+      <ul>
+        <li><strong>Avancement :</strong> Ajout d'un bouton pour la version mobile et poursuite de l'intégration du calendrier.</li>
+        <li><strong>Difficultés :</strong> Gestion des mois du calendrier, interactions JavaScript pour un graphique interactif.</li>
+        <li><strong>Création :</strong> Page graphique avec curseurs interactifs pour ajuster les données.</li>
+      </ul>
+    </div>
+
+    <!-- Card for 03/02/2025 -->
+    <div class="card">
+      <h3>03/02/2025</h3>
+      <li>Amélioration de la page DJE Calculator</li>
+      <ul>
+        <li><strong>Avancement :</strong> Amélioration esthétique et fonctionnelle du DJE Calculator, ajout de sliders.</li>
+        <li><strong>Création :</strong> Graphique interactif amélioré avec titres d'axes et meilleur design.</li>
+        <li><strong>Difficulté :</strong> Affichage correct des dates avec les calculs associés.</li>
+      </ul>
+    </div>
+
+    <!-- Card for 04/02/2025 -->
+    <div class="card">
+      <h3>04/02/2025</h3>
+      <li>Amélioration de DJE Calculator et ajustement CSS</li>
+      <ul>
+        <li><strong>Avancement :</strong> Ajout d’une échelle logarithmique dans le calculateur et modification des mois de l’année.</li>
+        <li><strong>CSS :</strong> Ajustement pour améliorer l’interface et l’affichage du calculateur et du graphique.</li>
+        <li><strong>Difficulté :</strong> Affichage des dates avec les calculs associés encore à améliorer.</li>
+      </ul>
+    </div>
+
+    <!-- Card for 06/02/2025 -->
+    <div class="card">
+      <h3>06/02/2025</h3>
+      <li>Nouvelle mise en page du graphique</li>
+      <ul>
+        <li><strong>Avancement :</strong> Nouvelle mise en page du graphique avec plusieurs saisies pour les dons.</li>
+        <li><strong>Création :</strong> Modifications des courbes en fonction des dons saisis.</li>
+      </ul>
+    </div>
+
+    <!-- Card for 07/02/2025 -->
+    <div class="card">
+      <h3>07/02/2025</h3>
+      <li>Amélioration du code avec colonnes d'affichage des dons</li>
+      <ul>
+        <li><strong>Avancement :</strong> Ajout des colonnes pour mieux visualiser la position des dons.</li>
+        <li><strong>CSS/JavaScript :</strong> Modifications pour améliorer l'affichage des colonnes et garantir une mise à jour dynamique des données.</li>
+      </ul>
+    </div>
+
+  </div>
+    
     </section>
   </body>
 </html>

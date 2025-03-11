@@ -154,6 +154,34 @@ body {
     transform: translateY(-5px);
 }
 
+/* Grille */
+.grille-competence {
+    margin: 50px auto;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1000px;
+    background-color: #2d2d30;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #6b46c1;
+}
+
+.grille-competence h2 {
+    font-size: 2rem;
+    color: #9f7aea;
+    margin-bottom: 20px;
+}
+
+.pdf-container {
+    background: #3a3a40;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: #e1e1e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
 /* Style des liens */
 a {
     color: #6b46c1; /* Couleur de base */
@@ -372,4 +400,110 @@ footer p {
 .button-container {
     text-align: center;
     margin: 20px 0;
+}
+
+/* Mode clair */
+.light-mode {
+    background: linear-gradient(180deg, #ffffff, #f4f4f4);
+    color: #1c1c1e;
+}
+
+/* Éléments principaux */
+.light-mode .navbar,
+.light-mode .projects,
+.light-mode .stages,
+.light-mode .grille-competence,
+.light-mode .veille,
+.light-mode .profile {
+    background-color: #ffffff;
+    color: #1c1c1e;
+    border: 1px solid #ddd;
+}
+
+/* Cartes et blocs */
+.light-mode .project-item,
+.light-mode .stage-item,
+.light-mode .pdf-container,
+.light-mode .veille-card {
+    background: #f8f8f8;
+    color: #1c1c1e;
+    border: 1px solid #ccc;
+}
+
+/* Liens et navigation */
+.light-mode .navbar ul li a,
+.light-mode a {
+    color: #6b46c1;
+    font-weight: bold;
+}
+
+.light-mode a:hover {
+    color: #4c2d91;
+}
+
+/* Boutons */
+.light-mode .button {
+    background-color: #6b46c1;
+    color: white;
+}
+
+.light-mode .button:hover {
+    background-color: #4c2d91;
+}
+
+/* Footer */
+.light-mode footer {
+    background-color: #f4f4f4;
+    color: #1c1c1e;
+    border-top: 1px solid #ddd;
+}
+
+/* Profil */
+.light-mode .profile p {
+    color: #333;
+}
+
+/* Projets */
+.light-mode .projects h2,
+.light-mode .stages h2,
+.light-mode .veille h2,
+.light-mode .grille-competence h2 {
+    color: #6b46c1;
+}
+
+/* Réseaux sociaux */
+.light-mode .social-media,
+.light-mode .programming-languages {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+.light-mode .social-media a,
+.light-mode .programming-languages a {
+    color: #6b46c1;
+}
+
+.light-mode .social-media a:hover,
+.light-mode .programming-languages a:hover {
+    color: #4c2d91;
+}
+
+/* Mode clair - Correction des couleurs */
+.light-mode .profile {
+    background: #ffffff; /* Fond blanc pour le mode clair */
+    color: #1c1c1e; /* Texte foncé pour la lisibilité */
+    border: 1px solid #ddd; /* Bordure légère */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre plus douce */
+}
+
+.light-mode .profile h1 {
+    color: #333; /* Titre plus foncé pour un bon contraste */
+}
+
+.light-mode .profile p {
+    color: #555; /* Texte légèrement plus foncé pour une meilleure lecture */
+}
+
+.light-mode .profile-photo {
+    border: 4px solid #6b46c1; /* Garder un contour violet pour l'harmonie */
 }

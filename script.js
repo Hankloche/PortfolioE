@@ -44,3 +44,24 @@ document.querySelectorAll('.social-media a').forEach((icon) => {
     });
   });
   
+  const toggleButton = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  // Vérifier le mode stocké dans le localStorage
+  if (localStorage.getItem("theme") === "light") {
+    body.classList.add("light-mode");
+    toggleButton.textContent = "🌙 Mode Sombre";
+  }
+
+  toggleButton.addEventListener("click", () => {
+    body.classList.toggle("light-mode");
+
+    if (body.classList.contains("light-mode")) {
+      localStorage.setItem("theme", "light");
+      toggleButton.textContent = "🌙 Mode Sombre";
+    } else {
+      localStorage.setItem("theme", "dark");
+      toggleButton.textContent = "☀️ Mode Clair";
+    }
+  });
+
