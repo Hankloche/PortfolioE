@@ -1,191 +1,132 @@
-/* Styles globaux */
-* {
+/* Global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
+    background-color: #f9f9f9;
+    color: #333;
     line-height: 1.6;
-    background-color: #1c1c1e; /* Fond noir profond */
-    color: #e1e1e1; /* Texte gris clair */
-    background: linear-gradient(180deg, #1c1c1e, #2d2d30);
-}
-
-/* Header */
-header {
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 20px;
-    border-radius: 10px; /* Ajout d'un arrondi pour le fond */
-    background-color: #6b46c1; /* Fond violet */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour effet de profondeur */
-}
-
-header .veille-title {
-    color: white; /* Texte blanc */
-    font-size: 2rem;
-    text-shadow: 0 0 5px #9f7aea;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-/* Section contenant les cartes */
-.veille {
-    width: 100%; /* Laisse les cartes occuper toute la largeur disponible */
-    margin: 50px auto;
-    text-align: center;
-}
-
-.veille h2 {
-    color: #fff;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Section des cartes */
-.veille-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* S'adapte à la taille de l'écran */
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Style des cartes */
-.veille-card {
-    background-color: #3a3a40;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.veille-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Titre des cartes */
-.veille-card h3 {
-    color: #9f7aea;
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-    text-shadow: 0px 0px 5px #9f7aea;
-}
-
-/* Date dans les cartes */
-.veille-card .date {
-    color: #ccc;
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-}
-
-/* Texte dans les cartes */
-.veille-card p {
-    color: #cfcfcf;
-    line-height: 1.6;
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-/* Bouton Lire plus */
-.veille-card .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #6b46c1;
+  }
+  
+  header {
+    background-color: #3f51b5;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
+    padding: 2rem;
     text-align: center;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.veille-card .btn:hover {
-    background-color: #9f7aea;
-}
-
-/* Responsive pour les cartes */
-@media screen and (max-width: 768px) {
-    .veille-cards {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajustement pour les écrans plus petits */
-    }
-
-    header .veille-title {
-        font-size: 1.5rem;
-    }
-
-    .veille h2 {
-        font-size: 1.5rem;
-    }
-}
-
-/* Style pour le bouton */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white; /* Texte blanc */
-    background-color: #6b46c1; /* Violet de ton header */
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: #9f7aea; /* Violet plus clair pour effet hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    transform: scale(1.05); /* Légère augmentation de taille */
-}
-
-.button:active {
-    background-color: #5a3d91; /* Teinte plus foncée pour effet d'interaction */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) inset;
-    transform: scale(0.98); /* Réduction légère à l'activation */
-}
-
-/* Exemple de centrage dans une section */
-.button-container {
-    text-align: center;
-    margin: 20px 0;
-}
-table {
+  }
+  
+  h1 {
+    margin-bottom: 0.3rem;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    color: #3f51b5;
+    border-bottom: 2px solid #3f51b5;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Timeline */
+  .timeline {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .timeline li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid #3f51b5;
+  }
+  
+  /* Tables */
+  table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 18px;
+    margin-top: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  thead {
+    background-color: #e8eaf6;
+  }
+  
+  th, td {
+    padding: 0.75rem;
     text-align: left;
-    background-color: #3a3a40;
-    color: #e1e1e1;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-th, td {
-    padding: 12px;
-    border: 1px solid #555;
-}
-th {
-    background-color: #6b46c1;
-    color: white;
-    text-transform: uppercase;
-}
-td {
-    background-color: #2d2d30;
-}
-h2 {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+/* === Galerie d'illustrations IA === */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .gallery figure {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     text-align: center;
-    color: #9f7aea;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-shadow: 0px 0px 5px #9f7aea;
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  
+  .gallery figure:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* plus haut pour meilleure lisibilité */
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery figcaption {
+    margin-top: 0.8rem;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #3f51b5;
+  }
+  
+  .btn-home {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #3f51b5;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  .btn-home:hover {
+    background-color: #303f9f;
+    transform: translateY(-2px);
+  }
+  
