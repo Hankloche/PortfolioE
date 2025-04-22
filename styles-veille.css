@@ -1,4 +1,4 @@
-/* Global */
+/* === Global === */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -31,9 +31,12 @@ body {
     color: #3f51b5;
     border-bottom: 2px solid #3f51b5;
     padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
   
-  /* Timeline */
+  /* === Timeline === */
   .timeline {
     list-style: none;
     padding: 0;
@@ -45,7 +48,7 @@ body {
     border-left: 4px solid #3f51b5;
   }
   
-  /* Tables */
+  /* === Tables === */
   table {
     width: 100%;
     border-collapse: collapse;
@@ -58,23 +61,31 @@ body {
     background-color: #e8eaf6;
   }
   
-  th, td {
+  th,
+  td {
     padding: 0.75rem;
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
   
+  /* === Liens === */
   a {
     color: #1a73e8;
     text-decoration: none;
+    transition: color 0.2s ease;
   }
   
   a:hover {
     text-decoration: underline;
   }
   
-/* === Galerie d'illustrations IA === */
-.gallery {
+  a:focus {
+    outline: 2px solid #ff9800;
+    outline-offset: 2px;
+  }
+  
+  /* === Galerie d'illustrations IA === */
+  .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
@@ -96,10 +107,15 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   }
   
+  .gallery figure:focus-within {
+    box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.4);
+  }
+  
   .gallery img {
     width: 100%;
+    max-width: 100%;
     height: auto;
-    max-height: 300px; /* plus haut pour meilleure lisibilité */
+    max-height: 300px;
     object-fit: contain;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -112,6 +128,7 @@ body {
     color: #3f51b5;
   }
   
+  /* === Bouton accueil === */
   .btn-home {
     display: inline-block;
     padding: 0.6rem 1.2rem;
@@ -128,5 +145,10 @@ body {
   .btn-home:hover {
     background-color: #303f9f;
     transform: translateY(-2px);
+  }
+  
+  .btn-home:focus {
+    outline: 2px solid #ff9800;
+    outline-offset: 2px;
   }
   
