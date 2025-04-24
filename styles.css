@@ -8,13 +8,14 @@
 
 body {
     line-height: 1.6;
-    background: linear-gradient(180deg, #1c1c1e, #2d2d30);
     color: #e1e1e1;
+    background-image: url(image/fond.png);
+    background-size: cover;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #2d2d30;
+    background-color: #3f51b5;
     color: #e1e1e1;
     padding: 1rem 0;
     position: sticky;
@@ -33,14 +34,14 @@ body {
 }
 
 .navbar ul li a {
-    color: #e1e1e1;
+    color: #c5c5c5;
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: #9f7aea;
+    color: #ffffff;
 }
 
 /* Section de profil */
@@ -49,10 +50,10 @@ body {
     margin: 50px auto;
     padding: 30px;
     max-width: 700px;
-    background: linear-gradient(135deg, #2d2d30, #4b0082);
+    background: #3f51b5;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    border: 1px solid #6b46c1;
+    border: 1px solid #3f51b5;
 }
 
 .profile-photo {
@@ -60,7 +61,7 @@ body {
     height: 120px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 4px solid #9f7aea;
+    border: 4px solid #5a40eb;
 }
 
 .profile h1 {
@@ -78,7 +79,7 @@ body {
 .profile a {
     margin-top: 20px;
     padding: 12px 24px;
-    background-color: #6b46c1;
+    background-color: #3f51b5;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -87,7 +88,7 @@ body {
 }
 
 .profile a:hover {
-    background-color: #9f7aea;
+    background-color: #3f51b5;
 }
 
 /* Projets */
@@ -96,24 +97,24 @@ body {
     padding: 40px 20px;
     text-align: center;
     max-width: 1000px;
-    background-color: #2d2d30;
+    background-color: #3f51b5;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    border: 1px solid #6b46c1;
+    border: 1px solid #3f51b5;
 }
 
 .projects h2 {
     font-size: 2rem;
-    color: #9f7aea;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 .project-item {
-    background: #3a3a40;
+    background: #ffffff;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    color: #e1e1e1;
+    color: #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
@@ -128,24 +129,24 @@ body {
     padding: 40px 20px;
     text-align: center;
     max-width: 1000px;
-    background-color: #2d2d30;
+    background-color: #3f51b5;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    border: 1px solid #6b46c1;
+    border: 1px solid #3f51b5;
 }
 
 .stages h2 {
     font-size: 2rem;
-    color: #9f7aea;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 .stage-item {
-    background: #3a3a40;
+    background: #ffffff;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    color: #e1e1e1;
+    color: #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
@@ -160,15 +161,15 @@ body {
     padding: 40px 20px;
     text-align: center;
     max-width: 1000px;
-    background-color: #2d2d30;
+    background-color: #3f51b5;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    border: 1px solid #6b46c1;
+    border: 1px solid #3f51b5;
 }
 
 .grille-competence h2 {
     font-size: 2rem;
-    color: #9f7aea;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
@@ -184,24 +185,24 @@ body {
 
 /* Style des liens */
 a {
-    color: #6b46c1; /* Couleur de base */
+    color: #3f51b5; /* Couleur de base */
     text-decoration: none; /* Supprime le soulignement */
     font-weight: bold; /* Texte en gras */
     transition: color 0.3s ease, transform 0.3s ease; /* Transition douce */
 }
 
 a:hover {
-    color: #9f7aea; /* Couleur au survol */
+    color: #5a40eb; /* Couleur au survol */
     transform: translateY(-2px); /* Légère élévation au survol */
 }
 
 a:focus {
     outline: none; /* Supprime la bordure de focus */
-    border-bottom: 2px solid #9f7aea; /* Légère bordure sous le lien au focus */
+    border-bottom: 2px solid #5a40eb; /* Légère bordure sous le lien au focus */
 }
 
 a:active {
-    color: #4c2d91; /* Couleur lorsque le lien est cliqué */
+    color: #303f9f; /* Couleur lorsque le lien est cliqué */
     transform: translateY(1px); /* Légère descente quand cliqué */
 }
 
@@ -210,9 +211,8 @@ a:active {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #2d2d30;
-    color: #e1e1e1;
-    border-top: 1px solid #6b46c1;
+    background-color: #3f51b5;
+    color: #ffffff;
     margin-top: 40px;
 }
 
@@ -227,7 +227,7 @@ footer p {
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    background-color: #2d2d30;
+    background-color: #3f51b5;
     padding: 10px;
     border-radius: 8px;
 }
@@ -241,7 +241,7 @@ footer p {
 }
 
 .social-media a {
-    color: #9f7aea;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
@@ -258,7 +258,7 @@ footer p {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    background-color: #2d2d30;
+    background-color: #3f51b5;
     padding: 20px;
     border-radius: 8px;
     
@@ -280,7 +280,7 @@ footer p {
 }
 
 .programming-languages a {
-    color: #9f7aea;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
@@ -313,7 +313,7 @@ footer p {
 
 .veille h2 {
     margin-bottom: 20px;
-    color: #9f7aea;
+    color: #5a40eb;
 }
 
 .veille-cards {
@@ -336,7 +336,7 @@ footer p {
 }
 
 .veille-card h3 {
-    color: #9f7aea;
+    color: #5a40eb;
     font-size: 1.4rem;
     margin-bottom: 10px;
 }
@@ -355,7 +355,7 @@ footer p {
 .veille-card .btn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #6b46c1;
+    background-color: #3f51b5;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -364,7 +364,7 @@ footer p {
 }
 
 .veille-card .btn:hover {
-    background-color: #9f7aea;
+    background-color: #5a40eb;
 }
 
 /* Style pour le bouton */
@@ -374,7 +374,7 @@ footer p {
     font-size: 1rem;
     font-weight: bold;
     color: white; /* Texte blanc */
-    background-color: #6b46c1; /* Violet de ton header */
+    background-color: #3f51b5; /* Violet de ton header */
     border: none;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -385,7 +385,7 @@ footer p {
 }
 
 .button:hover {
-    background-color: #9f7aea; /* Violet plus clair pour effet hover */
+    background-color: #5a40eb; /* Violet plus clair pour effet hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     transform: scale(1.05); /* Légère augmentation de taille */
 }
@@ -401,111 +401,3 @@ footer p {
     text-align: center;
     margin: 20px 0;
 }
-
-/* Mode clair */
-.light-mode {
-    background: linear-gradient(180deg, #ffffff, #f4f4f4);
-    color: #1c1c1e;
-}
-
-/* Éléments principaux */
-.light-mode .navbar,
-.light-mode .projects,
-.light-mode .stages,
-.light-mode .grille-competence,
-.light-mode .veille,
-.light-mode .profile {
-    background-color: #ffffff;
-    color: #1c1c1e;
-    border: 1px solid #ddd;
-}
-
-/* Cartes et blocs */
-.light-mode .project-item,
-.light-mode .stage-item,
-.light-mode .pdf-container,
-.light-mode .veille-card {
-    background: #f8f8f8;
-    color: #1c1c1e;
-    border: 1px solid #ccc;
-}
-
-/* Liens et navigation */
-.light-mode .navbar ul li a,
-.light-mode a {
-    color: #6b46c1;
-    font-weight: bold;
-}
-
-.light-mode a:hover {
-    color: #4c2d91;
-}
-
-/* Boutons */
-.light-mode .button {
-    background-color: #6b46c1;
-    color: white;
-}
-
-.light-mode .button:hover {
-    background-color: #4c2d91;
-}
-
-/* Footer */
-.light-mode footer {
-    background-color: #f4f4f4;
-    color: #1c1c1e;
-    border-top: 1px solid #ddd;
-}
-
-/* Profil */
-.light-mode .profile p {
-    color: #333;
-}
-
-/* Projets */
-.light-mode .projects h2,
-.light-mode .stages h2,
-.light-mode .veille h2,
-.light-mode .grille-competence h2 {
-    color: #6b46c1;
-}
-
-/* Réseaux sociaux */
-.light-mode .social-media,
-.light-mode .programming-languages {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-}
-
-.light-mode .social-media a,
-.light-mode .programming-languages a {
-    color: #6b46c1;
-}
-
-.light-mode .social-media a:hover,
-.light-mode .programming-languages a:hover {
-    color: #4c2d91;
-}
-
-/* Mode clair - Correction des couleurs */
-.light-mode .profile {
-    background: #ffffff; /* Fond blanc pour le mode clair */
-    color: #1c1c1e; /* Texte foncé pour la lisibilité */
-    border: 1px solid #ddd; /* Bordure légère */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre plus douce */
-}
-
-.light-mode .profile h1 {
-    color: #333; /* Titre plus foncé pour un bon contraste */
-}
-
-.light-mode .profile p {
-    color: #555; /* Texte légèrement plus foncé pour une meilleure lecture */
-}
-
-.light-mode .profile-photo {
-    border: 4px solid #6b46c1; /* Garder un contour violet pour l'harmonie */
-}
-
-

@@ -152,3 +152,61 @@ body {
     outline-offset: 2px;
   }
   
+  /* === Veille IA Section === */
+#veille-ia {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  #veille-ia article {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #veille-ia h3 {
+    color: #3f51b5;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  
+  #veille-ia h4 {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  #veille-ia p {
+    margin: 0.5rem 0 1rem 0;
+    color: #444;
+  }
+  
+  #veille-ia a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  #veille-ia a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style pour mise en avant de mots-clés ou catégories */
+  #veille-ia strong {
+    color: #3f51b5;
+  }
+  
+  #veille-ia em {
+    color: #666;
+    font-style: italic;
+  }
+
+  img {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+  

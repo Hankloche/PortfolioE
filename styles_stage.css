@@ -1,138 +1,80 @@
-/* Styles globaux */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
 body {
-    line-height: 1.6;
-    background-color: #1c1c1e; /* Fond noir profond */
-    color: #e1e1e1; /* Texte gris clair */
-    background: linear-gradient(180deg, #1c1c1e, #2d2d30);
-}
-
-/* Header */
-header {
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 20px;
-    border-radius: 10px; /* Ajout d'un arrondi pour le fond */
-    background-color: #6b46c1; /* Fond violet */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour effet de profondeur */
-}
-
-header .veille-title {
-    color: white; /* Texte blanc */
-    font-size: 2rem;
-    text-shadow: 0 0 5px #9f7aea;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-/* Section contenant les cartes */
-.cards {
-    width: 100%; /* Laisse les cartes occuper toute la largeur disponible */
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* S'adapte à la taille de l'écran */
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Style des cartes */
-.card {
-    background-color: #3a3a40;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Titre des cartes */
-.card h3 {
-    color: #9f7aea;
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-    text-shadow: 0px 0px 5px #9f7aea;
-    text-align: center;
-}
-
-/* Liste dans les cartes */
-.card ul {
-    list-style: none; /* Supprime les puces */
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-}
-
-.card ul li {
-    font-size: 1rem;
-    color: #cfcfcf;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
     line-height: 1.6;
-    margin-bottom: 10px;
-    padding-left: 10px;
+  }
+  
+  header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: #e8eaf6;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-left: 4px solid #3f51b5;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  section h2 {
+    color: #3f51b5;
+    border-bottom: 2px solid #3f51b5;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+  }
+  
+  section ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  section ul li {
     position: relative;
-}
-
-.card ul li::before {
-    content: '•'; /* Ajout d'une puce personnalisée */
-    color: #6b46c1; /* Couleur violette */
+    padding-left: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section ul li::before {
+    content: "•";
+    color: #3f51b5;
+    font-weight: bold;
     position: absolute;
     left: 0;
-    font-size: 1.2rem;
-    line-height: 1.2;
-}
-
-/* Style pour le bouton */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white; /* Texte blanc */
-    background-color: #6b46c1; /* Violet de ton header */
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: #9f7aea; /* Violet plus clair pour effet hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    transform: scale(1.05); /* Légère augmentation de taille */
-}
-
-.button:active {
-    background-color: #5a3d91; /* Teinte plus foncée pour effet d'interaction */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) inset;
-    transform: scale(0.98); /* Réduction légère à l'activation */
-}
-
-/* Exemple de centrage dans une section */
-.button-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-
-/* Responsive pour les cartes */
-@media screen and (max-width: 768px) {
-    .cards {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajustement pour les écrans plus petits */
-    }
-
-    header .veille-title {
-        font-size: 1.5rem;
-    }
-}
+  }
+  
